@@ -1,0 +1,23 @@
+<!--<!DOCTYPE html>-->
+<!--<html lang="en">-->
+<!--<head>-->
+<!--    <meta charset="UTF-8">-->
+<!--    <title>Title</title>-->
+<!--</head>-->
+<!--<body>-->
+
+<!--</body>-->
+<!--</html>-->
+
+<h1>There are {{ count }} words in your text</h1>
+
+<a href="{% url 'home' %}">Start again!</a>
+
+<h1>Text you entered:</h1>
+{{ fulltext }}
+
+<h1>Word Count</h1>
+{% for word, total in sorteddictionary %}
+{{ word }} - {{ total }}
+<br/>
+{% endfor %}
